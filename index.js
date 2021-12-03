@@ -24,6 +24,11 @@ const entry = [
     name: "GETEMAIL",
   },
   {
+    type: "input",
+    message: "Enter a Relative path tom EMP Profile Photo:",
+    name: "GETIMG",
+  },
+  {
     type: "list",
     message: "Enter Employee :",
     name: "GETROLE",
@@ -69,6 +74,7 @@ function init(entry) {
             response.NAME,
             response.GETID,
             response.GETEMAIL,
+            response.GETIMG,
             OFFICE
           );
           staff.push(newManager);
@@ -78,6 +84,7 @@ function init(entry) {
             response.NAME,
             response.GETID,
             response.GETEMAIL,
+            response.GETIMG,
             GITHUB
           );
           staff.push(newEngineer);
@@ -87,6 +94,7 @@ function init(entry) {
             response.NAME,
             response.GETID,
             response.GETEMAIL,
+            response.GETIMG,
             SCHOOL
           );
           staff.push(newIntern);
@@ -106,7 +114,11 @@ function init(entry) {
                 "index.html",
                 renderTemplateLiteral(staff),
                 (err) => {
-                  err ? console.log(err) : console.log("htmlfile is ready!");
+                  err
+                    ? console.log(err)
+                    : console.log(
+                        "HTML file created. Open in browser to view Team."
+                      );
                 }
               );
             }
