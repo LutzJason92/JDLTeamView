@@ -1,6 +1,13 @@
 body {
-  background-color: rgb(149, 149, 255);
+  background-color: rgb(149, 209, 255);
+  font-family: "Share Tech Mono", monospace;
+  font-family: "Varela Round", sans-serif;
 }
+
+.navbar {
+  margin-bottom: 30px;
+}
+
 .navbar-brand {
   font-size: 2em;
 }
@@ -10,18 +17,38 @@ body {
 }
 
 .navbar-brand.navbar-brand span {
-  color: rgb(75, 160, 181);
+  color: rgb(255, 255, 255);
 }
 
-.forecast-cards {
+.emp-cards {
   box-shadow: 0 0 16px;
+  border-radius: 65px;
 }
 
 .card-header {
   font-size: 1.5em;
 }
 
+.card-name {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.list-text {
+  margin: 5px;
+  text-align: center;
+}
+
 .empImg {
+  margin-top: 10px;
+  margin-bottom: 10px;
   width: 230px;
   height: 230px;
+  border-radius: 65px;
+  box-shadow: 0 0 16px rgb(149, 209, 255);
+}
+
+.footer-span {
+  color: black;
 }

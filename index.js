@@ -7,11 +7,12 @@ const renderTemplateLiteral = require("./src/src.js");
 
 let staff = [];
 // prompts user input
+
 const entry = [
   {
     type: "input",
     message: "What is employee First and Last name?",
-    name: "NAME",
+    name: "GETNAME",
   },
   {
     type: "input",
@@ -71,7 +72,7 @@ function init(entry) {
 
         if (OFFICE) {
           let newManager = new Manager(
-            response.NAME,
+            response.GETNAME,
             response.GETID,
             response.GETEMAIL,
             response.GETIMG,
@@ -81,7 +82,7 @@ function init(entry) {
         }
         if (GITHUB) {
           let newEngineer = new Engineer(
-            response.NAME,
+            response.GETNAME,
             response.GETID,
             response.GETEMAIL,
             response.GETIMG,
@@ -91,7 +92,7 @@ function init(entry) {
         }
         if (SCHOOL) {
           let newIntern = new Intern(
-            response.NAME,
+            response.GETNAME,
             response.GETID,
             response.GETEMAIL,
             response.GETIMG,
@@ -117,7 +118,7 @@ function init(entry) {
                   err
                     ? console.log(err)
                     : console.log(
-                        "HTML file created. Open in browser to view Team."
+                        "HTML file created. For Teamview, open in default browser."
                       );
                 }
               );
@@ -126,4 +127,5 @@ function init(entry) {
       })
   );
 }
+
 init(entry);
