@@ -1,6 +1,6 @@
 # Team Profile Generator: JDLTeamviewApp
 
-?License=mit&logo=appveyor
+![License: AGPL v3](https://img.shields.io/badge/License-MIT-blue.svg)
 
 ## Table of Contents
 
